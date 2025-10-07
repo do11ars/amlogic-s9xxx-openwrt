@@ -132,6 +132,9 @@ custom_packages() {
     wget https://fantastic-packages.github.io/releases/24.10/packages/aarch64_generic/luci/luci-app-tinyfilemanager_2.6-r20250804_all.ipk
     wget https://nikkinikki.pages.dev/openwrt-24.10/aarch64_generic/nikki/nikki_2025.09.24-r1_aarch64_generic.ipk
     wget https://nikkinikki.pages.dev/openwrt-24.10/aarch64_generic/nikki/luci-app-nikki_1.24.2-r1_all.ipk
+    wget https://github.com/gSpotx2f/packages-openwrt/raw/master/current/internet-detector_1.6.7-r1_all.ipk
+    wget https://github.com/gSpotx2f/packages-openwrt/raw/master/current/luci-app-internet-detector_1.6.7-r1_all.ipk
+    wget https://github.com/asvow/luci-app-tailscale/releases/download/v1.2.6/luci-app-tailscale_1.2.6_all.ipk
 
     sync && sleep 3
     echo -e "${INFO} [ packages ] directory status: $(ls -al 2>/dev/null)"
@@ -193,7 +196,7 @@ rebuild_firmware() {
         luci-mod-status luci-mod-system luci-proto-3g luci-proto-ipip luci-proto-ipv6 \
         luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay \
         \
-        luci-app-amlogic luci-app-tinyfilemanager nikki luci-app-nikki cloudflared luci-app-cloudflared luci-app-3ginfo-lite sms-tool luci-app-sms-tool-js luci-app-ramfree vnstat2 vnstati2 luci-app-vnstat2 luci-app-openvpn openvpn-openssl \
+        luci-app-amlogic luci-app-tinyfilemanager nikki luci-app-nikki internet-detector luci-app-internet-detector tailscale luci-app-tailscale luci-proto-modemmanager cloudflared luci-app-cloudflared luci-app-3ginfo-lite sms-tool luci-app-sms-tool-js luci-app-ramfree vnstat2 vnstati2 luci-app-vnstat2 luci-app-openvpn openvpn-openssl \
         \
         ${config_list} \
         "
