@@ -196,7 +196,7 @@ rebuild_firmware() {
         luci-mod-status luci-mod-system luci-proto-3g luci-proto-ipip luci-proto-ipv6 \
         luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay \
         \
-        luci-app-amlogic luci-app-tinyfilemanager nikki luci-app-nikki internet-detector luci-app-internet-detector tailscale luci-app-tailscale luci-proto-modemmanager cloudflared luci-app-cloudflared luci-app-3ginfo-lite sms-tool luci-app-sms-tool-js luci-app-ramfree vnstat2 vnstati2 luci-app-vnstat2 luci-app-openvpn openvpn-openssl \
+        luci-app-amlogic luci-app-tinyfilemanager nikki luci-app-nikki internet-detector luci-app-internet-detector luci-app-tailscale luci-proto-modemmanager cloudflared luci-app-cloudflared luci-app-3ginfo-lite sms-tool luci-app-sms-tool-js luci-app-ramfree vnstat2 vnstati2 luci-app-vnstat2 luci-app-openvpn openvpn-openssl \
         \
         ${config_list} \
         "
