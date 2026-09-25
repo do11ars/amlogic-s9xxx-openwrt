@@ -136,7 +136,6 @@ custom_packages() {
 
     # Download other luci-app-xxx
     # ......
-    wget https://downloads.immortalwrt.org/releases/25.12.2/packages/aarch64_generic/luci/luci-app-homeproxy-26.236.50544~cb5d434.apk
     wget https://downloads.immortalwrt.org/releases/25.12.2/packages/aarch64_generic/luci/luci-app-ramfree-26.236.50544~cb5d434.apk
     wget https://downloads.immortalwrt.org/releases/25.12.2/packages/aarch64_generic/luci/luci-app-diskman-0.2.13-r1.apk
     wget https://downloads.immortalwrt.org/releases/25.12.2/packages/aarch64_generic/luci/luci-theme-argon-2.4.7-r20260824.apk
@@ -226,7 +225,7 @@ rebuild_firmware() {
         luci-mod-status luci-mod-system luci-proto-3g luci-proto-ipip luci-proto-ipv6 \
         luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay luci-proto-modemmanager \
         \
-        luci-app-amlogic luci-app-homeproxy luci-app-ramfree luci-app-diskman luci-theme-argon luci-app-argon-config internet-detector luci-app-internet-detector luci-app-3ginfo-lite sms-tool luci-app-sms-tool-js \
+        luci-app-amlogic luci-app-ramfree luci-app-diskman luci-theme-argon luci-app-argon-config internet-detector luci-app-internet-detector luci-app-3ginfo-lite sms-tool luci-app-sms-tool-js \
         \
         ${config_list} \
         "
