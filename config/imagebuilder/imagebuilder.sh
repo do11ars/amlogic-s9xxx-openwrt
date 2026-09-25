@@ -136,6 +136,15 @@ custom_packages() {
 
     # Download other luci-app-xxx
     # ......
+    wget https://downloads.immortalwrt.org/releases/25.12.2/packages/aarch64_generic/luci/luci-app-homeproxy-26.236.50544~cb5d434.apk
+    wget https://downloads.immortalwrt.org/releases/25.12.2/packages/aarch64_generic/luci/luci-app-ramfree-26.236.50544~cb5d434.apk
+    wget https://downloads.immortalwrt.org/releases/25.12.2/packages/aarch64_generic/luci/luci-app-diskman-0.2.13-r1.apk
+    wget https://downloads.immortalwrt.org/releases/25.12.2/packages/aarch64_generic/luci/luci-theme-argon-2.4.7-r20260824.apk
+    wget https://downloads.immortalwrt.org/releases/25.12.2/packages/aarch64_generic/luci/luci-app-argon-config-26.236.50544~cb5d434.apk
+    wget https://github.com/gSpotx2f/packages-openwrt/raw/master/25.12/internet-detector-1.7.4-r1.apk
+    wget https://github.com/gSpotx2f/packages-openwrt/raw/master/25.12/luci-app-internet-detector-1.7.4-r1.apk
+    wget https://github.com/4IceG/luci-app-3ginfo-lite/releases/download/1.0.77-r20260215/luci-app-3ginfo-lite-1.0.77-r20260215.apk
+    wget https://github.com/4IceG/luci-app-sms-tool-js/releases/download/2.0.42-r20260831/luci-app-sms-tool-js-2.0.42-r20260831.apk
 
     # Remove the packages that are not needed based on the Image Builder type (APK or OPKG)
     if grep -q "CONFIG_USE_APK=y" ../.config; then
