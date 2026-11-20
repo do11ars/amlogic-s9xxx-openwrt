@@ -226,7 +226,7 @@ rebuild_firmware() {
         luci-mod-status luci-mod-system luci-proto-3g luci-proto-ipip luci-proto-ipv6 \
         luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay luci-proto-modemmanager \
         \
-        luci-app-amlogic luci-app-ramfree luci-app-diskman luci-theme-argon luci-app-argon-config internet-detector luci-app-internet-detector luci-app-3ginfo-lite sms-tool luci-app-sms-tool-js sing-box \
+        luci-app-amlogic luci-app-ramfree luci-app-diskman luci-theme-argon luci-app-argon-config internet-detector luci-app-internet-detector luci-app-3ginfo-lite sms-tool luci-app-sms-tool-js \
         \
         ${config_list} \
         "
